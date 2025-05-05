@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './mvnw clean install org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+        sh './mvnw clean install org.sonarsource.scanner.maven:sonar-maven-plugin:13.233.247.57:9000'
         sh 'tree'
       }
     }
